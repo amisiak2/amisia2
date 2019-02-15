@@ -46,18 +46,18 @@
   <input type="submit" value="Submit">
 </form>
     
-    <button type="button" class="mdc-button mdc-button--raised">
-      Stop playing LightBot!
+    <button type="button" class="standard mdc-button mdc-button--raised">
+      Anthony!
     </button>
     <br>
-     <button type="button" class="mdc-button mdc-button--raised">
-      Wake up!
+     <button type="button" class="standard mdc-button mdc-button--raised">
+      Apple!
     </button> <br>
-     <button type="button" class="mdc-button mdc-button--raised">
-      I don't like haters.
+     <button type="button" class="standard mdc-button mdc-button--raised">
+      Cats and dogs..
     </button> <br>
-     <button type="button" class="mdc-button mdc-button--raised">
-      Put that cookie down.
+     <button type="button" class="standard mdc-button mdc-button--raised">
+      Burger King.
     </button>
     
     
@@ -102,8 +102,8 @@
             
         // hook up event handler on the buttons
         
-         $("button").on("click", function() {
-           sayIt($(this).text());
+         $("button.special").on("click", function() {
+           sayIt($("#phrase").val());
          });
         
 
